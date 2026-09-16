@@ -1,0 +1,8 @@
+{
+  "hostname": "cyber-hw02-target1",
+  "audit_date": "2026-09-16",
+  "critical_count": 0,
+  "warning_count": 4,
+  "info_count": 0,
+  "findings": [{"severity":"WARNING","category":"filesystem","check":"unexpected_suid","message":"SUID/SGID binary not on whitelist: /usr/local/bin/legacy-monitor","details":{"path":"/usr/local/bin/legacy-monitor","mode":"4755","owner":"root:root"}},{"severity":"WARNING","category":"filesystem","check":"unexpected_suid","message":"SUID/SGID binary not on whitelist: /usr/bin/write","details":{"path":"/usr/bin/write","mode":"2755","owner":"root:tty"}},{"severity":"WARNING","category":"filesystem","check":"unexpected_suid","message":"SUID/SGID binary not on whitelist: /usr/libexec/utempter/utempter","details":{"path":"/usr/libexec/utempter/utempter","mode":"2711","owner":"root:utmp"}},{"severity":"WARNING","category":"accounts","check":"nopasswd_sudo","message":"Active NOPASSWD sudoers entry in /etc/sudoers.d/90-ta-nopasswd: ta ALL=(ALL) NOPASSWD:ALL","details":{"path":"/etc/sudoers.d/90-ta-nopasswd","entry":"ta ALL=(ALL) NOPASSWD:ALL"}}]
+}

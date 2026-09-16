@@ -1,0 +1,8 @@
+{
+  "hostname": "cyber-hw02-target3",
+  "audit_date": "2026-09-16",
+  "critical_count": 2,
+  "warning_count": 5,
+  "info_count": 0,
+  "findings": [{"severity":"WARNING","category":"filesystem","check":"unexpected_suid","message":"SUID/SGID binary not on whitelist: /usr/local/bin/.hidden_shell","details":{"path":"/usr/local/bin/.hidden_shell","mode":"4755","owner":"root:root"}},{"severity":"WARNING","category":"filesystem","check":"unexpected_suid","message":"SUID/SGID binary not on whitelist: /usr/libexec/utempter/utempter","details":{"path":"/usr/libexec/utempter/utempter","mode":"2711","owner":"root:utmp"}},{"severity":"WARNING","category":"filesystem","check":"unexpected_suid","message":"SUID/SGID binary not on whitelist: /usr/bin/write","details":{"path":"/usr/bin/write","mode":"2755","owner":"root:tty"}},{"severity":"WARNING","category":"filesystem","check":"world_writable","message":"World-writable path outside expected locations: /etc/cron.d","details":{"path":"/etc/cron.d","mode":"777"}},{"severity":"CRITICAL","category":"filesystem","check":"bad_permissions","message":"/etc/shadow has mode 644, expected 000","details":{"path":"/etc/shadow","actual_mode":"644","expected_mode":"000"}},{"severity":"WARNING","category":"accounts","check":"nopasswd_sudo","message":"Active NOPASSWD sudoers entry in /etc/sudoers.d/90-ta-nopasswd: ta ALL=(ALL) NOPASSWD:ALL","details":{"path":"/etc/sudoers.d/90-ta-nopasswd","entry":"ta ALL=(ALL) NOPASSWD:ALL"}},{"severity":"CRITICAL","category":"ssh","check":"ssh_root_login_enabled","message":"sshd_config permits direct root login: PermitRootLogin yes","details":{"directive":"PermitRootLogin yes"}}]
+}
